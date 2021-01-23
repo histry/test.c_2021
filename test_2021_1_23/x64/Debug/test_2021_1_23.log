@@ -1,0 +1,12 @@
+﻿  test,c.cpp
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(5,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(5,9): message : 请考虑在格式字符串中使用“%zd”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(6,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(6,9): message : 请考虑在格式字符串中使用“%zd”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(7,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(7,9): message : 请考虑在格式字符串中使用“%zd”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(8,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(8,9): message : 请考虑在格式字符串中使用“%zd”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(9,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\histry.c_code\test.c_2021\test_2021_1_23\test,c.cpp(9,9): message : 请考虑在格式字符串中使用“%zd”
+  test_2021_1_23.vcxproj -> C:\histry.c_code\test.c_2021\test_2021_1_23\x64\Debug\test_2021_1_23.exe
