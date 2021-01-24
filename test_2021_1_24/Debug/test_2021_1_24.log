@@ -1,0 +1,5 @@
+﻿  test.c
+C:\histry.c_code\test.c_2021\test_2021_1_24\test.c(7,10): warning C4087: “getchar”: 用“void”参数列表声明
+C:\histry.c_code\test.c_2021\test_2021_1_24\test.c(8,18): warning C4047: “函数”:“int”与“char [20]”的间接级别不同
+C:\histry.c_code\test.c_2021\test_2021_1_24\test.c(8,10): warning C4024: “putchar”: 形参和实参 1 的类型不同
+  test_2021_1_24.vcxproj -> C:\histry.c_code\test.c_2021\test_2021_1_24\Debug\test_2021_1_24.exe
