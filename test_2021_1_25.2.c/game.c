@@ -34,15 +34,15 @@ void game()
 		}
 		else
 		{
-			printf("恭喜，猜对了");
+			printf("恭喜，猜对了\n");
 			break;
 		}		
 	}
 }
 int main()
 {
-	int input = 0;
 	srand((unsigned)time(NULL));
+	int input = 0;
 	do
 	{
 		menu();//菜单
