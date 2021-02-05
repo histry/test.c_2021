@@ -1,3 +1,4 @@
+//其他源文件中只需要引game.h就可以了
 
 #define ROW 3
 #define COL 3
@@ -9,8 +10,10 @@
 //只要引了game.h就引了stdio.h
 //所以其他源文件中只需要引game.h就可以了
 
+//函数的声明
 void InitBoard(char board[ROW][COL],int row,int col);
 void DisplayBoard(char board[ROW][COL], int row, int col);
 void PlayerMove(char board[ROW][COL], int row, int col);
 void ComputerMove(char board[ROW][COL], int row, int col);
 char Iswin(char board[ROW][COL], int row, int col);
+int IsFull(char board[ROW][COL], int row, int col);

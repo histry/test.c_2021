@@ -1,10 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-#include"game.h"
-
-void InitBoard(char board[ROW][COL], int row, int col);
-
-void DisplayBoard(char board[ROW][COL], int row, int col);
+#include"game.h"//引头文件
 
 void mnue()
 {
@@ -19,50 +15,52 @@ void game()
 {
 	char ret = 0;
 	//数组存放棋盘信息
-	char board[ROW][COL] = { 0 };
+	char board[ROW][COL] = { 0 };//二维数组的初始化并没有这么简单
 	int row = ROW;
 	int col = COL;
 	//1.初始化棋盘
-	InitBoard(board, row, col);
+	//一定要初始化
+	InitBoard(board, ROW, COL);
 	//2.打印棋盘
-	DisplayBoard(board, row, col);
+	DisplayBoard(board, ROW, COL);
 	//3.玩游戏，开始下棋了
 	while (1)
 	{
 		//玩家下棋
-		PlayerMove(board, row, col);
-		DisplayBoard(board, row, col);
+		PlayerMove(board, ROW, COL);
+		DisplayBoard(board, ROW, COL);
 		//判断玩家是否赢了
-		ret = Iswin(board, row, col);
+		ret = Iswin(board, ROW, COL);
+		//如果不是游戏继续，那么就直接跳出循环
 		if (ret != 'D')
 		{
 			break;
 		}
 
 		//电脑下棋
-		ComputerMove(board, row, col);
-		DisplayBoard(board, row, col);
+		ComputerMove(board, ROW, COL);
+		DisplayBoard(board, ROW, COL);
 		//判断电脑是否赢了
-		ret = Iswin(board, row, col);
+		ret = Iswin(board, ROW, COL);
+		//如果不是游戏继续，那么就直接跳出循环
 		if (ret != 'D')
 		{
 			break;
 		}
 	}
-	if (ret == 'x')
+	if (ret == 'X')
 		printf("玩家赢了\n");
-	else if (ret == 'o')
+	else if (ret == 'O')
 		printf("电脑赢了\n");
-	else if (ret == 'C')
+	else
 		printf("平局\n");
-
 }
 
 
 int main()
 {
 	int input = 0;
-	srand((unsigned int)time(NULL));
+	srand((unsigned int)time(NULL));//扩大电脑走的随机值范围
 	do
 	{
 		mnue();

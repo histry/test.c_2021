@@ -20,7 +20,7 @@ void InitBoard(char board[ROW][COL], int row, int col)
 }
 
 
-
+//打印棋盘
 void DisplayBoard(char board[ROW][COL], int row, int col)
 {
 	int i = 0;
@@ -47,6 +47,7 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 	}
 }
 
+//玩家下棋
 void PlayerMove(char board[ROW][COL], int row, int col)
 {
 	int x = 0;
@@ -60,7 +61,7 @@ void PlayerMove(char board[ROW][COL], int row, int col)
 		{
 			if (board[x - 1][y - 1] == ' ')
 			{
-				board[x - 1][y - 1] = 'x';
+				board[x - 1][y - 1] = 'X';
 				break;
 			}
 			else
@@ -71,32 +72,27 @@ void PlayerMove(char board[ROW][COL], int row, int col)
 	}
 }
 
+//电脑随机下棋
 void ComputerMove(char board[ROW][COL], int row, int col)
 {
 	printf("电脑走\n");//三子棋中电脑只要下在空棋盘上即可
 	int x = 0;
 	int y = 0;
-	x = rand() % row;//将电脑走的随机值控制在棋盘中
-	y = rand() % col;
 	while (1)
 	{
+		x = rand() % row;//将电脑走的随机值控制在棋盘中
+		y = rand() % col;
 		if (x >= 1 && y >= 1 && x <= row && y <= col)
 		{
 			if (board[x - 1][y - 1] == ' ')
 			{
-				board[x - 1][y - 1] = 'o';
+				board[x - 1][y - 1] = 'O';
 				break;
 			}
 		}
 	}
 }
 
-//判断输赢
-//4种状态
-//1.玩家赢了---'x'
-//2.电脑赢了---'o'
-//3.平局----'C'
-//4.游戏继续---'D'
 
 //返回1，表示棋盘满了
 //返回0，表示棋盘还没满
@@ -114,36 +110,45 @@ int IsFull(char board[ROW][COL], int row, int col)
 	}
 	return 1;//满了
 }
+
+//判断输赢和游戏是否继续
+//判断输赢
+//4种状态
+//1.玩家赢了---'X'
+//2.电脑赢了---'O'
+//3.平局----'C'
+//4.游戏继续---'D'
+
 char Iswin(char board[ROW][COL], int row, int col)
 {
 	int i = 0;
 
 	//横3行
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < row; i++)
 	{
 		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][1] != ' ')
 		{
-			return board[i][1];
+			return board[i][0];//Iswin直接结束
 		}
 	}
 
 	//列3行
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < col; i++)
 	{
 		if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[1][i] != ' ')
 		{
-			return board[1][i];
+			return board[0][i];
 		}
 	}
 
 	//两个对角线
-	if (board[0][1] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
+	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
 		return board[1][1];
 	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
 		return board[1][1];
 	
 	//判断是否平局
-	if (1 == IsFull(board[ROW][COL], row, col));
+	if (1 == IsFull(board, ROW, COL))
 		return 'C';
 
 	//继续游戏
