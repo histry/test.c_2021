@@ -1,0 +1,2 @@
+﻿  test.c
+C:\histry.c_code\test.c_2021\test_2021_2_6\test.c(137,6): error C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
