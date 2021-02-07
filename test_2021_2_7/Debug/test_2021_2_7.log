@@ -1,0 +1,11 @@
+﻿  test.c
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,14): error C2057: 应输入常量表达式
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,14): error C2466: 不能分配常量大小为 0 的数组
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,15): error C2133: “b”: 未知的大小
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,27): error C2057: 应输入常量表达式
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,27): error C2466: 不能分配常量大小为 0 的数组
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(14,28): error C2133: “xianjing”: 未知的大小
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(36,4): error C2181: 没有匹配 if 的非法 else
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(38,24): error C2065: “i”: 未声明的标识符
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(38,32): error C2065: “i”: 未声明的标识符
+C:\histry.c_code\test.c_2021\test_2021_2_7\test.c(38,43): error C2065: “i”: 未声明的标识符
