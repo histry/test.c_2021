@@ -1,0 +1,4 @@
+﻿  test.c
+C:\histry.c_code\test.c_2021\test_2021_2_10\test.c(16,26): warning C4047: “函数”:“char *”与“char (*)[4]”的间接级别不同
+C:\histry.c_code\test.c_2021\test_2021_2_10\test.c(16,22): warning C4024: “my_strlen”: 形参和实参 1 的类型不同
+  test_2021_2_10.vcxproj -> C:\histry.c_code\test.c_2021\test_2021_2_10\Debug\test_2021_2_10.exe
