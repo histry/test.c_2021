@@ -1,0 +1,4 @@
+﻿  test.c
+C:\histry.c_code\test.c_2021\test_2021_2_17\test.c(20,11): warning C4047: “函数”:“int (**)[4]”与“int [3][4]”的间接级别不同
+C:\histry.c_code\test.c_2021\test_2021_2_17\test.c(20,8): warning C4024: “print”: 形参和实参 1 的类型不同
+  test_2021_2_17.vcxproj -> C:\histry.c_code\test.c_2021\test_2021_2_17\Debug\test_2021_2_17.exe
