@@ -1,0 +1,7 @@
+﻿  test.c
+C:\Github\test.c_2021\test_2021_3_12\test.c(29,29): warning C4047: “=”:“char”与“char [2]”的间接级别不同
+C:\Github\test.c_2021\test_2021_3_12\test.c(33,29): warning C4047: “=”:“char”与“char [2]”的间接级别不同
+C:\Github\test.c_2021\test_2021_3_12\test.c(35,29): warning C4047: “=”:“char”与“char [2]”的间接级别不同
+C:\Github\test.c_2021\test_2021_3_12\test.c(37,29): warning C4047: “=”:“char”与“char [2]”的间接级别不同
+C:\Github\test.c_2021\test_2021_3_12\test.c(39,29): warning C4047: “=”:“char”与“char [2]”的间接级别不同
+  test_2021_3_12.vcxproj -> C:\Github\test.c_2021\test_2021_3_12\Debug\test_2021_3_12.exe
